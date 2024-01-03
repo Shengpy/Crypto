@@ -1,0 +1,315 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Buffer overrun while writing to 'buffer'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 9,
+                  "endLine": 13,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "readFile",
+                  "decoratedName": "?readFile@@YAXPEBDAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 6,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 7,
+                            "startColumn": 44
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "'buffer' is a 0 byte array"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'buffer' is an In/Out argument to 'fread' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdio.h:239)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid write to 'buffer', (outside its writable range)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "readFile",
+                  "decoratedName": "?readFile@@YAXPEBDAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 35,
+                  "endLine": 79,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "binaryStringToUnsignedLong",
+                  "decoratedName": "?binaryStringToUnsignedLong@@YA_KV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 21,
+                  "endLine": 110,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "isPrime64bit",
+                  "decoratedName": "?isPrime64bit@@YA_N_K@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+                },
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 42,
+                  "endLine": 111,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "isPrime64bit",
+                  "decoratedName": "?isPrime64bit@@YA_N_K@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.32.31329.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Admin/source/repos/OOP/Project1/Project1/Source.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "c946bcd301da659ba56f0a16ece1bafb188cabd97253a40808783afc9f7e3ddf"
+          }
+        }
+      ]
+    }
+  ]
+}
